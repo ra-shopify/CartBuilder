@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <h1>Richad's Shopping Adventure</h1>
+    <h2>Customer Information</h2>
+    <h3>Email Address</h3>
+    <input id="customer-search-input" type="email">
+    <div class="button-group">
+        <button id="customer-search" type="button">Add Customer To Cart</button>
+    </div>
+    <br><br><br>
+    <form class="customerForm">
+        <div class="form-group">
+            <label for="lblfname">First Name:</label>
+            <input type="text" id="fName" name="fName" required>
+        </div>
+        <div class="form-group">
+            <label for="lbllname">Last Name:</label>
+            <input type="text" id="lName" name="lName" required>
+        </div>
+        <div class="form-group">
+            <label for="lblemail">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="lbllphone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="lblbirthday">Birthday:</label>
+            <input type="date" id="birthday" name="bithday" required>
+        </div>
+        <div class="form-group">
+            <label for="lbladdress">Street:</label>
+            <input type="text" id="street" name="street" required>
+        </div>
+        <div class="form-group">
+            <label for="lblcity">City:</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <label for="lblstate">State:</label>
+            <input type="text" id="state" name="state" required>
+        </div>
+        <div class="form-group">
+            <label for="lblzip">Zip:</label>
+            <input type="text" id="zip" name="zip" required>
+        </div>
+        <div class="button-group">
+            <button type="submit" class="create-button">Create Customer</button>
+        </div>
+    </form>
+    <br>
+    <br>
+    <h2>Product Information</h2>
+    <div class="product-list">
+        <div class="product-header">
+            <span>Image</span>
+            <span>Title</span>
+            <span>Description</span>
+            <span>Price</span>
+            <span>Available</span>
+        </div>
+        <ul id="unordered-product-list" class="product-grid"></ul>
+    </div>
+    <br><br><br>
+    <form class="productForm">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required>
+        </div>
+        <div class="form-group">
+            <label for="number">Price:</label>
+            <input type="" id="price" name="price" required>
+        </div>
+        <div class="form-group">
+            <label for="available">Available Inventory:</label>
+            <input type="number" id="available" name="available" required>
+        </div>
+        <div class="form-group">
+            <label for="imageURL">Image URL:</label>
+            <input type="url" id="imageURL" name="imageURL" required>
+        </div>
+        <div class="button-group">
+            <button type="submit" class="create-button">Create Product</button>
+        </div>
+    </form>
+    <h2>Current Cart</h2>
+    <br><br><br>
+    <div class="current-customer"></div>
+    <br><br><br>
+    <div class="product-list">
+        <div class="product-list-header">
+            <span>Title</span>
+            <span>Description</span>
+            <span>Price</span>
+            <span>Quantity</span>
+            <span>Total</span>
+        </div>
+        <ul id="unordered-cart-list" class="product-grid"></ul>
+    </div>
+</body>
+</html>

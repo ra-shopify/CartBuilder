@@ -1,0 +1,182 @@
+
+form.customerForm {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form.productForm {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: contents;
+}
+
+label {
+    justify-self: end;
+    align-self: center;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the start (left) */
+    gap: 40px; /* Adjust the gap between buttons */
+    margin-top: 20px;
+    margin-left: 95px; /* Automatically adjust left margin to push buttons to the right */
+}
+
+button {
+    padding: 17px 40px;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Optional: Adjust font size */
+}
+
+button:hover {
+    background-color: cadetblue; /* Optional: Darker shade on hover */
+}
+
+.product-list {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr; /* Adjusted to make the description column larger */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-header span {
+    padding: 10px;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.product-list-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr; /* Adjusted to make the description column larger */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-list-header span {
+    padding: 10px;
+    background-color: midnightblue; /* Set background color to black */
+    color: white; /* Set text color to white */
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.product-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr; /* Adjusted to make the description column larger */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item span {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.product-list-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr; /* Adjusted to make the description column larger */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-list-item span {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.product-image {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+.quantity-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 60px;
+}
+
+.add-to-cart-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.add-to-cart-button:hover {
+    background-color: cadetblue;
+}
+
+.current-customer {
+    display: flex;
+    justify-content: center;
+}
+
+.customer-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: fit-content;
+    background-color: #f9f9f9;
+}
+
+.customer-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.customer-box p {
+    margin: 5px 0;
+}
+
+.customer-box .address-label {
+    margin-bottom: 5px;
+}
+
+.customer-box .address-detail {
+    margin-left: 70px; /* Adjust the value as needed */
+}
